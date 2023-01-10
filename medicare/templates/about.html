@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+
+     <h2>About us</h2>
+     <p>
+      The vision ‘affordable, accessible and quality healthcare for all’, a dream of visionary, Dr. K G Alexander was made a reality in 1987 with the commencement of Baby Memorial Hospital (BMH). The novel initiative then marked a revolution in the healthcare segment in Kerala, thus symbolizing an answer for the growing healthcare demands of the state. A tribute to late K C Varghese (known as ‘Baby’), father of Dr. K G Alexander, the Chairman and Managing Director, the hospital has set a benchmark in offering unprecedented care.
+      
+      With only 52 beds when started, the hospital now boasts world‐class amenities, which includes:
+      
+      600 beds.
+      Over 40 Medical and Surgical departments.
+      Exceptional paramedical support system.
+      16 world-class operation theatres.
+      11 fully equipped ultramodern ICUs.
+      24‐hours accident and trauma care unit.
+      Adhering to strict and ethical medical practices, the hospital team ‐ which expands to 300 doctors and over 2000 nursing, paramedical and administrative staff – relentlessly strive to keep up our ideology, ‘ more than care ‘.</p>
+    <div class="text-enter text-white bg-color-aqua">
+
+     <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'image/ab.JPEG' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"></p>
+            <a href="{% url 'contact' %}"  class="btn btn-primary">contact</a>
+          </div>
+        </div>
+</div>
+{% endblock %}

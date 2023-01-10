@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<body style="background-color:darkcyan">
+<h1 class="container text-center text-yellow">contact</h1>
+<div class="mapouter">
+    <div class="gmap_canvas">
+        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=695&amp;height=579&amp;hl=en&amp;q=calicut&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+        </iframe>
+        <a href="https://formatjson.org/">format json</a>
+    </div><style>.mapouter{position:relative;text-align:right;width:100px;height:50px;}.gmap_canvas {overflow:hidden;background:none!important;width:300px;height:200px;}.gmap_iframe {width:300px!important;height:200px!important;}
+    </style>
+</div>
+<div class="mx-auto w-50 bg-dark text-align-right text-white p-3 my-3 border border-info">
+    <h2 class="text-align-right ">Contact Number</h2><br>
+    <h1 class="text-align-right">1800 300 453 </h1><br> 
+    </div>
+    <div class="mx-auto w-50 bg-dark text-align-right text-white p-3 my-3 border border-info">
+    <h2 class="text-align-right color-white">Email</h2><br>
+    <h4 ><a href="{% url 'home' %}" >cityhospital123@gmail.com</a></h4>
+    </div>
+
+    <div class="mx-auto w-50 bg-dark text-align-right text-white p-3 my-3 border border-info">
+   <h2 class="text-align-right">Working Hours</h2>
+   <h1 class="text-align-right">24/7 working time</h1>
+   </div>
+</div>
+</body>
+
+
+
+
+{% endblock %}

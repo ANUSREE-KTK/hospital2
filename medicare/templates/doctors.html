@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}  
+<body style="background-color:cornflowerblue">
+<div class="text-center; text-align:justyfy content"></div>
+<div class="text-right">
+
+</div>
+
+{% for i in doctors %}
+
+<div class="container text-center">
+   
+   
+
+    <div class="card text-center justyfy-content-start " style="width: 18rem ;display: inline-block; background-color: rgb(125, 130, 140); text-decoration: dotted;  ">
+        <img src="{{ i.doc_img.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          
+          <h5 class="card-title ">{{i.doc_name }}</h5>
+          <p class="card-text">{{ i.doc_spec }}</p>
+          <h6 class="card-text">{{ i.dep_name }} Departments</h6>
+        </div>
+      </div>
+    
+</div>
+
+
+
+{% endfor %}
+</body>
+{% endblock %}
+
+
